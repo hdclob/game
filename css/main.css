@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+#signup {
+    margin-top: 50px;
+}
+
+.topnav {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.topnav a{
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    line-height: 1;
+}
+
+#createRoom, #joinRoom, #startGame {
+    height: 500px;
+    line-height: 1;
+    background-color: black;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#createRoom a, #joinRoom a, #startGame a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    /* padding: 100px; */
+}
+
+#chat {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    color: black;
+    overflow: auto;
+}
