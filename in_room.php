@@ -150,13 +150,13 @@
         //Refresh connected players
         var username = <?php echo '"' . $username . '"'; ?>
 
-        $("#connected-players").load("connected_players.php", {"username": username, "code": <?php echo $code; ?>});
+        $("#connected-players").load("connected_players.php", {"username": username, "code": <?php echo $code; ?>, "type": "connected-players"});
 
         setInterval(function() {
 
         username = <?php echo '"' . $username . '"'; ?>
 
-        $("#connected-players").load("connected_players.php", {"username": username, "code": <?php echo $code; ?>});
+        $("#connected-players").load("connected_players.php", {"username": username, "code": <?php echo $code; ?>, "type": "connected-players"});
         }, 1000);
         </script>
     <script>
