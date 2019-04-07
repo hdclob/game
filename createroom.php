@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $isReady = false;
 ?>
 
 <!DOCTYPE <!DOCTYPE html>

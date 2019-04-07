@@ -42,7 +42,21 @@ switch($type) {
         echo "Players connected: " . $count . "/2";
         break;
     case "start-button":
-        if($count > 1) echo '<div id="startGame"><a href="">Start Game</a></div>';
+        if($count > 1) echo '
+                                <div id="startGame"><a href="ingame.php">Start Game</a></div>
+                                <script>
+                                    $("#startGame a").css("padding-top", parseFloat($("#startGame").css("height")) / 2 - parseFloat($("#startGame").css("line-height")) / 2);
+                                    $("#startGame a").css("padding-bottom", parseFloat($("#startGame").css("height")) / 2 - parseFloat($("#startGame").css("line-height")) / 2);
+                                    $("#startGame a").on({
+                                        mouseenter: function() {
+                                            $(this).css("font-size", "55px");
+                                        },
+                                        mouseleave: function() {
+                                            $(this).css("font-size", "50px");
+                                        },
+                                    });
+                                </script>
+                                ';
         break;
 }
 
